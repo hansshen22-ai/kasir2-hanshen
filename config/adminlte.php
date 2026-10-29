@@ -77,8 +77,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+    'logo' => '<b>kasir</b>sekolah',
+    'logo_img' => 'vendor/adminlte/dist/assets/img/logoaww.png',
     'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs opacity-75',
@@ -100,7 +100,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
+            'path' => 'vendor/adminlte/dist/assets/img/logoaww.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -136,8 +136,8 @@ return [
         'enabled' => true,
         'mode' => 'fullscreen',
         'img' => [
-            'path' => 'vendor/adminlte/dist/assets/img/AdminLTELogo.png',
-            'alt' => 'AdminLTE Preloader Image',
+            'path' => 'vendor/adminlte/dist/assets/img/logoaww.png',
+            'alt' => 'logoaw',
             'effect' => 'animation__shake',
             'width' => 60,
             'height' => 60,
@@ -763,15 +763,11 @@ return [
     |
     */
 
-    'menu' => [
+  'menu' => [
         // Navbar items:
         [
             'type' => 'navbar-search',
             'text' => 'search',
-            'topnav_right' => true,
-        ],
-        [
-            'type' => 'darkmode-widget',
             'topnav_right' => true,
         ],
         [
@@ -785,84 +781,21 @@ return [
             'text' => 'search',
         ],
         [
-            'text' => 'blog',
-            'url' => 'admin/blog',
-            'can' => 'manage-blog',
+            'text' => 'dashboard',
+            'route' => 'dashboard',
         ],
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'bi bi-file-earmark',
-            'label' => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'bi bi-person',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'bi bi-lock',
-        ],
-        [
-            'text' => 'multilevel',
-            'icon' => 'bi bi-share',
+            'text' => 'Master Data',
+            'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url' => '#',
+                    'text' => 'Jurusan',
+                    'route' => 'jurusan.index',
                 ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
+
             ],
         ],
-        ['header' => 'labels'],
-        [
-            'text' => 'important',
-            'icon_color' => 'danger',
-            'url' => '#',
-        ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'warning',
-            'url' => '#',
-        ],
-        [
-            'text' => 'information',
-            'icon_color' => 'info',
-            'url' => '#',
-        ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Menu Filters
